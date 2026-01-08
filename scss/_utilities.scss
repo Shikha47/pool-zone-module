@@ -46,6 +46,9 @@ select:focus {
   &-gray-100 {
     background-color: var(--grey);
   }
+  &-grey-40 {
+    background: var(--grey-40);
+  }
   &-purple {
     background-color: #4744b2;
   }

@@ -13,6 +13,7 @@
   --green-10: #076a34;
   --grey-30: #666666;
   --teal-1: #ebf8f9;
+  --grey-40: #faf2f2;
 }
 
 /*!
@@ -11921,6 +11922,9 @@ select:focus {
 .bg-gray, .bg-gray-100 {
   background-color: var(--grey);
 }
+.bg-grey-40 {
+  background: var(--grey-40);
+}
 .bg-purple {
   background-color: #4744b2;
 }
@@ -12232,8 +12236,6 @@ a:active {
 .text-number {
   width: 16px;
   height: 16px;
-  background: #fffdfd;
-  font-size: 11px;
 }
 
 .text-badge {

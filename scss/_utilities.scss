@@ -200,3 +200,27 @@ a {
 .col-gap-2 {
   column-gap: 2px;
 }
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--grey-10) #f1f1f1;
+}
+
+/* Chrome, Edge, Safari */
+*::-webkit-scrollbar {
+  width: 2px;
+  height: 4px;
+}
+/* ================= GLOBAL SCROLLBAR ================= */
+*::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--grey-30);
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--grey-30);
+  width: 2px;
+}

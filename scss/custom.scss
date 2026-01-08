@@ -1,0 +1,302 @@
+// 1️⃣ Variable overrides
+@import "variables";
+
+// 2️⃣ Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// 3️⃣ Custom utilities & components
+@import "utilities";
+
+// ================= GLOBAL COMPONENT STYLES ================= //
+
+.custom-navbar {
+  background-color: var(--teal-30);
+}
+
+// ================= HEADER ================= //
+.hamburger-btn {
+  background: transparent;
+  border: none;
+  padding: 0;
+  width: 32px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+
+  img {
+    width: 1.5rem;
+  }
+}
+
+.brand-image {
+  img {
+    width: 6.5625rem;
+  }
+}
+
+// ================= BORDERS & DIVIDERS ================= //
+.border-gradient-teal {
+  .col:not(:last-child) {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background: linear-gradient(
+        180deg,
+        rgba(6, 65, 71, 0.8) 0%,
+        rgba(18, 188, 202, 0.8) 48.4%,
+        rgba(6, 65, 71, 0.8) 100%
+      );
+      width: 2px;
+      height: 100%;
+      top: 0;
+      right: 0;
+    }
+  }
+}
+
+// ================= SPORTS CARD ================= //
+.sport-card {
+  background: linear-gradient(180deg, #135c63 0%, #107a85 48.4%, #135c63 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  border-right: 1px solid #135c63;
+  position: relative;
+
+  &.active {
+    color: #12bcca;
+
+    .sport-card-inner::after {
+      content: "";
+      background: #12bcca;
+      width: 100%;
+      position: absolute;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  h6 {
+    margin: 0;
+    font-size: 11px;
+    font-weight: 500;
+  }
+}
+
+.sport-card-inner {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.sport-icon {
+  width: 1.625rem;
+  margin-bottom: 8px;
+}
+
+// ================= BADGES ================= //
+.badge-wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  border-bottom-left-radius: 2px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.badge {
+  border-radius: 0;
+  padding: 1px 4px;
+  font-weight: 700;
+  font-size: 11px;
+
+  &-green {
+    background-color: var(--green);
+    color: #148312;
+  }
+
+  &-dark {
+    background-color: #054146;
+    color: var(--white);
+  }
+}
+
+// ================= SCROLL ================= //
+.sports-section {
+  .row {
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+// ================= TABS ================= //
+.tab-active {
+  background-color: var(--teal-30);
+}
+
+.tab-inactive {
+  background-color: var(--white);
+}
+
+.tab-score {
+  button {
+    position: relative;
+    height: 100%;
+
+    &:hover {
+      cursor: pointer;
+      color: var(--teal-10);
+      background: var(--grey);
+
+      &::after {
+        content: "";
+        background: var(--teal-10);
+        width: 100%;
+        position: absolute;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+}
+
+.tab-score-active {
+  &::after {
+    content: "";
+    background: var(--teal-10);
+    width: 100%;
+    position: absolute;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+// ================= UI ELEMENTS ================= //
+.text-number {
+  width: 16px;
+  height: 16px;
+  background: #fffdfd;
+  font-size: 11px;
+}
+
+.text-badge {
+  width: 27px;
+  height: 22px;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cashout-btn {
+  background: #fb9201;
+  padding: 4px 6px;
+}
+
+.circle-gradient {
+  background: linear-gradient(
+    180deg,
+    #135c63 0%,
+    #116870 48.4%,
+    #10727c 71.76%,
+    #10747f 100%
+  );
+  width: 52px;
+  height: 52px;
+  top: -20px;
+}
+
+// ================= MENU ================= //
+.custom-menu {
+  .btn-custom-close {
+    background: url(../assets/images/close-circle.png) no-repeat center;
+    background-size: 24px;
+    opacity: 1;
+  }
+
+  li {
+    a {
+      background: linear-gradient(
+        180deg,
+        #135c63 0%,
+        #107a85 48.4%,
+        #135c63 100%
+      );
+      border-radius: 4px;
+      padding: 10px 14px;
+      width: 100%;
+      display: flex;
+      font-size: 14px;
+      gap: 12px;
+      align-items: center;
+
+      img {
+        width: 24px;
+      }
+    }
+  }
+}
+
+// ================= FORMS ================= //
+.form-check-input {
+  border: 1.21px solid #00000033;
+}
+
+.input-stake {
+  input {
+    &::placeholder {
+      color: var(--grey-20);
+    }
+  }
+}
+
+// ================= LAYOUT HELPERS ================= //
+.full-bleed-16 {
+  width: calc(100% + 16px);
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.full-bleed {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+}
+
+// ================= LISTING ================= //
+.listing {
+  li {
+    flex: none;
+  }
+
+  button {
+    &:hover {
+      background: var(--teal-1) !important;
+      border-bottom-left-radius: 0 !important;
+      border-bottom-right-radius: 0 !important;
+      color: var(--teal-10) !important;
+
+      &::after {
+        content: "";
+        background: var(--teal-10);
+        width: 100%;
+        position: absolute;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+}

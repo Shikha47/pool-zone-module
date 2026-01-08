@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pool Zone</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
+
+    <!-- Compiled CSS -->
+    <link rel="stylesheet" href="css/custom.css" />
+  </head>
+
+  <body>
+    <header id="site-header" role="banner">
+      <nav class="navbar custom-navbar" aria-label="Primary navigation">
+        <div
+          class="container-fluid d-flex align-items-center justify-content-between flex-nowrap"
+        >
+          <!-- Left: Menu + Brand -->
+          <div class="d-flex align-items-center gap-2 flex-nowrap">
+            <button
+              type="button"
+              class="hamburger-btn"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#sideMenu"
+              aria-label="Open main menu"
+            >
+              <img
+                src="./assets/images/hamburger.svg"
+                alt="Open menu"
+                width="24"
+                height="24"
+              />
+            </button>
+
+            <!-- Brand Logo -->
+            <a href="/" class="brand-image" aria-label="Pool Zone Home">
+              <img
+                src="./assets/images/logo.png"
+                alt="Pool Zone Logo"
+                class="img-fluid"
+              />
+            </a>
+          </div>
+
+          <!-- Right: Search + Auth -->
+          <div class="d-flex align-items-center gap-2 flex-nowrap">
+            <button type="button" class="btn p-0" aria-label="Search">
+              <i class="bi bi-search text-white fs-5" aria-hidden="true"></i>
+            </button>
+
+            <a
+              href="#login"
+              class="btn px-2 py-1 fw-medium text-uppercase fs-14 rounded-1 text-teal border-teal"
+            >
+              Login
+            </a>
+
+            <a
+              href="#register"
+              class="btn bg-teal-10 py-1 text-uppercase fw-medium fs-14 rounded-1 text-white"
+            >
+              Register
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <aside
+      class="offcanvas offcanvas-start bg-teal-40 w-269 custom-menu"
+      tabindex="-1"
+      id="sideMenu"
+    >
+      <div class="offcanvas-header">
+        <div class="brand-image">
+          <img src="./assets/images/logo.png" alt="Logo" class="img-fluid" />
+        </div>
+        <button
+          type="button"
+          class="btn-close btn-custom-close"
+          data-bs-dismiss="offcanvas"
+        ></button>
+      </div>
+
+      <div class="offcanvas-body">
+        <ul class="list-unstyled">
+          <li class="mb-3">
+            <a href="#" class="text-decoration-none text-white fw-medium">
+              <img src="./assets/images/fav.png" alt="Favorite" /> Favorite</a
+            >
+          </li>
+          <li class="mb-3">
+            <a href="#" class="text-decoration-none text-white fw-medium">
+              <img src="./assets/images/fav.png" alt="Favorite" /> Favorite</a
+            >
+          </li>
+          <li class="mb-3">
+            <a href="#" class="text-decoration-none text-white fw-medium">
+              <img src="./assets/images/fav.png" alt="Favorite" /> Favorite</a
+            >
+          </li>
+          <li class="mb-3">
+            <a href="#" class="text-decoration-none text-white fw-medium">
+              <img src="./assets/images/fav.png" alt="Favorite" /> Favorite</a
+            >
+          </li>
+          <li class="mb-3">
+            <a href="#" class="text-decoration-none text-white fw-medium">
+              <img src="./assets/images/fav.png" alt="Favorite" /> Favorite</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="offcanvas-footer p-3">
+        <img src="./assets/images/download.png" width="120px" />
+      </div>
+    </aside>
+    <main>
+      <section class="sports-section bg-teal-50">
+        <div class="">
+          <div class="row flex-nowrap overflow-auto g-0 ps-3">
+            <div
+              class="col-auto flex-fill sport-card bg-gradient-tealactive px-3"
+            >
+              <div class="badge-wrap fs-11">
+                <span class="badge badge-green">8</span>
+                <span class="badge badge-dark">16</span>
+              </div>
+              <div class="sport-card-inner py-2">
+                <img src="./assets/images/cricket.png" class="sport-icon" />
+                <h6>Cricket</h6>
+              </div>
+            </div>
+            <div class="col-auto flex-fill sport-card bg-gradient-teal px-3">
+              <div class="badge-wrap fs-11">
+                <span class="badge badge-green">8</span>
+                <span class="badge badge-dark">16</span>
+              </div>
+              <div class="sport-card-inner py-2">
+                <img src="./assets/images/shot.png" class="sport-icon" />
+                <h6>soccer</h6>
+              </div>
+            </div>
+
+            <div class="col-auto flex-fill sport-card bg-gradient-teal px-3">
+              <div class="badge-wrap fs-11">
+                <span class="badge badge-green">8</span>
+                <span class="badge badge-dark">16</span>
+              </div>
+              <div class="sport-card-inner py-2">
+                <img src="./assets/images/tennis.png" class="sport-icon" />
+                <h6>Tennis</h6>
+              </div>
+            </div>
+
+            <div class="col-auto flex-fill sport-card bg-gradient-teal px-3">
+              <div class="badge-wrap fs-11">
+                <span class="badge badge-green">8</span>
+                <span class="badge badge-dark">16</span>
+              </div>
+              <div class="sport-card-inner py-2">
+                <img src="./assets/images/poker-chips.png" class="sport-icon" />
+                <h6>Casino</h6>
+              </div>
+            </div>
+
+            <div class="col-auto flex-fill sport-card bg-gradient-teal px-3">
+              <div class="badge-wrap fs-11">
+                <span class="badge badge-green">8</span>
+                <span class="badge badge-dark">16</span>
+              </div>
+              <div class="sport-card-inner py-2">
+                <img src="./assets/images/finish-flag.png" class="sport-icon" />
+                <h6>Horse Race</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-1">
+        <div class="container-fluid">
+          <!-- Header -->
+          <section
+            class="d-flex justify-content-between align-items-center mb-3"
+            aria-label="Match controls"
+          >
+            <!-- Back Navigation -->
+            <nav aria-label="Back navigation">
+              <button
+                class="btn fw-medium d-flex align-items-center gap-1 p-0 fs-12"
+                aria-label="Go back"
+                type="button"
+              >
+                <img
+                  src="./assets/images/leftArrow.png"
+                  width="6"
+                  alt="Back arrow"
+                />
+                <span>Back</span>
+              </button>
+            </nav>
+
+            <!-- Action buttons -->
+            <div class="d-flex gap-3" role="group" aria-label="Actions">
+              <button class="btn p-0" aria-label="Filter">
+                <i class="bi bi-funnel fs-5" aria-hidden="true"></i>
+              </button>
+
+              <button class="btn p-0" aria-label="Add to favorites">
+                <i class="bi bi-star fs-5" aria-hidden="true"></i>
+              </button>
+            </div>
+          </section>
+
+          <article
+            class="card border-0 rounded-3 rounded-bottom-0 shadow-sm position-relative mb-3"
+            aria-labelledby="match-title"
+          >
+            <!-- Match Date -->
+            <time
+              datetime="2026-05-22T20:30"
+              class="position-absolute top-0 start-50 translate-middle-x px-4 py-1 date-ribbon text-white fs-11"
+            >
+              22 MAY, 8:30 PM
+            </time>
+
+            <div class="card-body pt-5 pb-0 px-1">
+              <!-- Teams -->
+              <header class="text-center">
+                <div class="row justify-content-center align-items-center">
+                  <div class="col-auto fs-14 fw-semibold text-end">
+                    <h2 id="match-title" class="fs-14 fw-semibold mb-0">
+                      Royal Challengers<br />Bangalore
+                    </h2>
+                  </div>
+
+                  <div class="col-auto">
+                    <span
+                      class="rounded-circle bg-gray-100 text-teal fw-semibold d-inline-flex align-items-center justify-content-center fs-14"
+                      style="width: 32px; height: 32px"
+                      aria-hidden="true"
+                    >
+                      VS
+                    </span>
+                  </div>
+
+                  <div class="col-auto fs-14 fw-semibold text-start">
+                    <h3 class="fs-14 fw-semibold mb-0">
+                      Rajasthan<br />Royals
+                    </h3>
+                  </div>
+                </div>
+              </header>
+
+              <!-- Tabs / Navigation -->
+              <nav
+                class="row mt-4 g-1 tab-score flex-nowrap overflow-auto no-scrollbar"
+                aria-label="Match navigation"
+              >
+                <div class="w-auto">
+                  <button
+                    class="btn w-100 d-flex align-items-center justify-content-center gap-2 rounded-2 rounded-bottom-0 py-1 bg-gray-100 border-0"
+                    aria-label="View match"
+                  >
+                    <img
+                      src="./assets/images/eye.png"
+                      width="20"
+                      height="20"
+                      alt="View match"
+                    />
+                  </button>
+                </div>
+
+                <div class="col flex-shrink-0">
+                  <button
+                    class="btn w-100 rounded-2 rounded-bottom-0 py-1 bg-gray-100 border-0 fw-semibold text-teal tab-score-active position-relative px-2 text-nowrap"
+                    aria-current="page"
+                  >
+                    Score Card
+                  </button>
+                </div>
+
+                <div class="col flex-shrink-0">
+                  <button
+                    class="btn w-100 rounded-2 rounded-bottom-0 py-1 bg-gray-100 border-0 fw-semibold px-2 text-nowrap"
+                  >
+                    Live TV
+                  </button>
+                </div>
+
+                <div class="col flex-shrink-0">
+                  <button
+                    class="btn w-100 d-flex align-items-center justify-content-center gap-2 rounded-2 rounded-bottom-0 py-1 bg-gray-100 fs-14 border-0 fw-semibold px-2 text-nowrap"
+                  >
+                    Open Bets
+                    <span
+                      class="text-badge bg-white rounded-pill text-center text-color"
+                      aria-label="123 open bets"
+                    >
+                      123
+                    </span>
+                  </button>
+                </div>
+              </nav>
+            </div>
+
+            <!-- Score Card Image -->
+            <figure class="mb-0">
+              <img
+                src="./assets/images/score-card.png"
+                class="img-fluid w-100"
+                alt="Match score card"
+              />
+            </figure>
+          </article>
+
+          <article
+            class="card border-0 shadow-sm rounded-3 overflow-hidden mb-3"
+          >
+            <!-- ================= HEADER / TITLE BAR ================= -->
+            <!-- Using <header> because this is the top section of this card -->
+            <header class="bg-teal-30 text-white px-14 py-2">
+              <div
+                class="d-flex align-items-center justify-content-between flex-nowrap"
+              >
+                <!-- Left side: Title + Badge -->
+                <div class="d-flex align-items-center gap-2 flex-nowrap">
+                  <!-- Using <h2> for proper content hierarchy -->
+                  <h2 class="fw-medium fs-14 mb-0 text-nowrap">Match Odds</h2>
+
+                  <!-- Badge / Label -->
+                  <span
+                    class="cashout-btn rounded-4 fs-10 text-white fw-medium text-nowrap"
+                    aria-label="Cash out available"
+                  >
+                    CASH OUT
+                  </span>
+                </div>
+
+                <!-- Right side: Actions -->
+                <div class="d-flex align-items-center gap-3 flex-nowrap">
+                  <!-- Icon with alt text for accessibility -->
+                  <img
+                    src="./assets/images/detail-icon.svg"
+                    width="18"
+                    alt="View match details"
+                  />
+
+                  <!-- Column headings -->
+                  <div class="d-flex align-items-center" aria-hidden="true">
+                    <div class="fw-medium fs-12 w-60 text-center text-nowrap">
+                      BACK
+                    </div>
+                    <div class="fw-medium fs-12 w-60 text-center text-nowrap">
+                      LAY
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </header>
+
+            <!-- ================= MATCH ODDS LIST ================= -->
+            <!-- Using <section> because this is a grouped content area -->
+            <section aria-label="Team odds list">
+              <!-- ===== Team Row 1 ===== -->
+              <div class="px-3 py-2">
+                <div class="row align-items-center">
+                  <!-- Team Name -->
+                  <div class="col">
+                    <!-- <h3> for semantic structure -->
+                    <h3 class="mb-0 fw-medium fs-14 text-grey-30">
+                      Rajasthan Royals
+                    </h3>
+                  </div>
+
+                  <!-- Odds -->
+                  <div class="col-auto odds-card">
+                    <div
+                      class="d-flex position-relative rounded-3 overflow-hidden w-100 col-gap-2"
+                      role="group"
+                      aria-label="Odds for Rajasthan Royals"
+                    >
+                      <!-- Back Odds -->
+                      <div
+                        class="px-1 py-1 text-center fw-semibold fs-14 bg-odds-blue w-60"
+                      >
+                        12.32
+                        <div class="fs-11 fw-normal">2.32K</div>
+                      </div>
+
+                      <!-- Lay Odds -->
+                      <div
+                        class="px-1 py-1 text-center fw-semibold fs-14 bg-odds-pink w-60"
+                      >
+                        1.32
+                        <div class="fs-11 fw-normal">2.32K</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ===== Team Row 2 ===== -->
+              <div class="px-3 py-2">
+                <div class="row align-items-center">
+                  <!-- Team Name -->
+                  <div class="col">
+                    <h3 class="mb-0 fw-medium fs-14 text-grey-30">
+                      Rajasthan Royals
+                    </h3>
+                  </div>
+
+                  <!-- Odds -->
+                  <div class="col-auto odds-card">
+                    <div
+                      class="d-flex position-relative rounded-3 overflow-hidden w-100 col-gap-2"
+                      role="group"
+                      aria-label="Odds for Rajasthan Royals"
+                    >
+                      <div
+                        class="px-1 py-1 text-center fw-semibold fs-14 bg-odds-blue w-60"
+                      >
+                        12.32
+                        <div class="fs-11 fw-normal">2.32K</div>
+                      </div>
+
+                      <div
+                        class="px-1 py-1 text-center fw-semibold fs-14 bg-odds-pink w-60"
+                      >
+                        1.32
+                        <div class="fs-11 fw-normal">2.32K</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </article>
+
+          <article class="mb-3">
+            <section
+              class="card border-0 shadow-sm rounded-3 overflow-hidden rounded-bottom-0"
+            >
+              <!-- Header -->
+              <header class="bg-teal-30 text-white px-14 py-2">
+                <div
+                  class="d-flex align-items-center justify-content-between flex-nowrap"
+                >
+                  <!-- Left side: Bookmaker Name & Cash Out -->
+                  <div class="d-flex align-items-center gap-2 flex-nowrap">
+                    <h2 class="fw-medium fs-14 text-nowrap m-0">Bookmaker</h2>
+                    <span
+                      class="cashout-btn rounded-4 fs-10 text-white fw-medium text-nowrap"
+                    >
+                      CASH OUT
+                    </span>
+                  </div>
+
+                  <!-- Right side: Details & Back/Lay labels -->
+                  <div class="d-flex align-items-center gap-3 flex-nowrap">
+                    <img
+                      src="./assets/images/detail-icon.svg"
+                      width="18"
+                      alt="Details Icon"
+                    />
+                    <div class="d-flex align-items-center">
+                      <span class="fw-medium fs-12 w-60 text-center text-nowrap"
+                        >BACK</span
+                      >
+                      <span class="fw-medium fs-12 w-60 text-center text-nowrap"
+                        >LAY</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </header>
+
+              <!-- Row 1: Team Odds -->
+              <div class="px-3 py-2">
+                <div class="row align-items-center">
+                  <div class="col">
+                    <h3 class="mb-0 fw-medium fs-14 text-grey-30">
+                      Rajasthan Royals
+                    </h3>
+                  </div>
+                  <div class="col-auto odds-card">
+                    <div
+                      class="d-flex position-relative rounded-3 overflow-hidden w-100 col-gap-2"
+                    >
+                      <div
+                        class="px-1 py-1 text-center fw-semibold fs-14 bg-odds-blue w-60"
+                      >
+                        12.32
+                        <div class="fs-11 fw-normal">2.32K</div>
+                      </div>
+                      <div
+                        class="px-1 py-1 text-center fw-semibold fs-14 bg-odds-pink w-60"
+                      >
+                        1.32
+                        <div class="fs-11 fw-normal">2.32K</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Row 2: Team Odds -->
+              <div class="px-3 py-2">
+                <div class="row align-items-center">
+                  <div class="col">
+                    <h3 class="mb-0 fw-medium fs-14 text-grey-30">
+                      Royal Challengers Bangalore
+                    </h3>
+                  </div>
+                  <div class="col-auto odds-card">
+                    <div
+                      class="d-flex position-relative rounded-3 overflow-hidden w-100 col-gap-2"
+                    >
+                      <div
+                        class="px-1 py-1 text-center fw-semibold fs-14 bg-odds-blue w-60"
+                      >
+                        12.32
+                        <div class="fs-11 fw-normal">2.32K</div>
+                      </div>
+                      <div
+                        class="px-1 py-1 text-center fw-semibold fs-14 bg-odds-pink w-60"
+                      >
+                        1.32
+                        <div class="fs-11 fw-normal">2.32K</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="rounded-1 p-2 bg-panel full-bleed-16">
+              <!-- Toggle Accept Any Odds -->
+              <div class="form-check form-switch mb-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  role="switch"
+                  id="acceptOdds"
+                />
+                <label
+                  class="form-check-label fw-medium fs-14"
+                  for="acceptOdds"
+                >
+                  Accept any odds
+                </label>
+              </div>
+
+              <!-- Odds & Stake Input -->
+              <form class="bg-white p-3" aria-label="Place your bet">
+                <div class="row g-2 align-items-end flex-nowrap">
+                  <!-- Odds Input -->
+                  <div class="col-auto">
+                    <label class="fw-normal mb-2 fs-16 d-block" for="oddsInput"
+                      >Odds</label
+                    >
+                    <div class="input-group">
+                      <button type="button" class="btn bg-teal-30 text-white">
+                        −
+                      </button>
+                      <input
+                        type="text"
+                        id="oddsInput"
+                        class="form-control text-center fw-semibold fs-16 text-grey-20 border-blue w-auto flex-shrink-1 p-0"
+                        value="2.15"
+                        style="max-width: 50px"
+                      />
+                      <button type="button" class="btn bg-teal-30 text-white">
+                        +
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Stake Input -->
+                  <div class="col">
+                    <label class="fw-normal mb-2 fs-16 d-block" for="stakeInput"
+                      >Stake</label
+                    >
+                    <input
+                      type="text"
+                      id="stakeInput"
+                      class="form-control border-color-grey-10 rounded-1"
+                      placeholder="Enter amount"
+                    />
+                  </div>
+
+                  <!-- Refresh Odds Button -->
+                  <div class="col-auto">
+                    <button
+                      type="button"
+                      class="btn btn-refresh rounded-1 h-100"
+                      aria-label="Refresh Odds"
+                    >
+                      <img
+                        src="../assets/images/refresh.svg"
+                        alt="Refresh Icon"
+                      />
+                    </button>
+                  </div>
+                </div>
+
+                <div
+                  class="row row-cols-5 g-1 mt-3 text-center mb-3 text-num-change"
+                >
+                  <div class="col">
+                    <button
+                      class="btn bg-min text-white w-100 fw-semibold fs-14"
+                    >
+                      Min
+                    </button>
+                  </div>
+                  <div class="col">
+                    <button
+                      class="btn bg-teal-30 text-white w-100 fw-semibold fs-14"
+                    >
+                      100
+                    </button>
+                  </div>
+                  <div class="col">
+                    <button
+                      class="btn bg-teal-30 text-white w-100 fw-semibold fs-14"
+                    >
+                      200
+                    </button>
+                  </div>
+                  <div class="col">
+                    <button
+                      class="btn bg-teal-30 text-white w-100 fw-semibold fs-14"
+                    >
+                      300
+                    </button>
+                  </div>
+                  <div class="col">
+                    <button
+                      class="btn bg-teal-30 text-white w-100 fw-semibold fs-14"
+                    >
+                      400
+                    </button>
+                  </div>
+
+                  <div class="col">
+                    <button
+                      class="btn bg-teal-30 text-white w-100 fw-semibold fs-14"
+                    >
+                      500
+                    </button>
+                  </div>
+                  <div class="col">
+                    <button
+                      class="btn bg-teal-30 text-white w-100 fw-semibold fs-14"
+                    >
+                      1000
+                    </button>
+                  </div>
+                  <div class="col">
+                    <button
+                      class="btn bg-teal-30 text-white w-100 fw-semibold fs-14"
+                    >
+                      10k
+                    </button>
+                  </div>
+                  <div class="col">
+                    <button
+                      class="btn bg-purple text-white w-100 fw-semibold fs-14"
+                    >
+                      Max
+                    </button>
+                  </div>
+                  <div class="col">
+                    <button
+                      class="btn bg-green-10 text-white w-100 fw-semibold fs-14"
+                    >
+                      All IN
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Bottom Buttons -->
+                <div class="row g-2">
+                  <div class="col-auto col-sm-3">
+                    <button
+                      type="reset"
+                      class="btn text-teal-10 w-100 py-3 px-4 fw-semibold border border-teal fs-16 rounded-1"
+                    >
+                      Cancel
+                    </button>
+                  </div>
+                  <div class="col">
+                    <button
+                      type="submit"
+                      class="btn bg-teal-10 w-100 py-3 fw-bold fs-16 text-white rounded-1"
+                    >
+                      Place Bet
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </section>
+          </article>
+          <!-- Toss Odds Card -->
+          <article
+            class="card border-0 shadow-sm rounded-3 overflow-hidden mb-3"
+          >
+            <!-- Card Header -->
+            <header class="bg-teal-30 text-white px-14 py-2">
+              <div
+                class="d-flex align-items-center justify-content-between flex-nowrap"
+              >
+                <!-- Left: Toss Title & Cash Out -->
+                <div class="d-flex align-items-center gap-2 flex-nowrap">
+                  <h2 class="fw-medium fs-14 text-nowrap m-0">Toss</h2>
+                  <span
+                    class="cashout-btn rounded-4 fs-10 text-white fw-medium text-nowrap"
+                  >
+                    CASH OUT
+                  </span>
+                </div>
+
+                <!-- Right: Details Icon & Back/Lay Labels -->
+                <div class="d-flex align-items-center gap-3 flex-nowrap">
+                  <img
+                    src="./assets/images/detail-icon.svg"
+                    width="18"
+                    alt="Details Icon"
+                  />
+                  <div class="d-flex align-items-center">
+                    <span class="fw-medium fs-12 w-60 text-center text-nowrap"
+                      >BACK</span
+                    >
+                    <span class="fw-medium fs-12 w-60 text-center text-nowrap"
+                      >LAY</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </header>
+
+            <!-- Row 1: Team Toss Odds -->
+            <section class="px-3 py-2">
+              <div class="row align-items-center">
+                <div class="col">
+                  <h3 class="mb-0 fw-medium fs-14 text-grey-30">
+                    Rajasthan Royals
+                  </h3>
+                </div>
+                <div class="col-auto odds-card">
+                  <div
+                    class="d-flex position-relative rounded-3 overflow-hidden w-100 col-gap-2"
+                  >
+                    <!-- Back Odds -->
+                    <div
+                      class="px-1 py-1 text-center fw-semibold fs-14 bg-odds-blue w-60"
+                    >
+                      12.32
+                      <div class="fs-11 fw-normal">2.32K</div>
+                    </div>
+                    <!-- Lay Odds -->
+                    <div
+                      class="px-1 py-1 text-center fw-semibold fs-14 bg-odds-pink w-60"
+                    >
+                      1.32
+                      <div class="fs-11 fw-normal">2.32K</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Row 2: Team Toss Odds -->
+            <section class="px-3 py-2">
+              <div class="row align-items-center">
+                <div class="col">
+                  <h3 class="mb-0 fw-medium fs-14 text-grey-30">
+                    Royal Challengers Bangalore
+                  </h3>
+                </div>
+                <div class="col-auto odds-card">
+                  <div
+                    class="d-flex position-relative rounded-3 overflow-hidden w-100 col-gap-2"
+                  >
+                    <!-- Back Odds -->
+                    <div
+                      class="px-1 py-1 text-center fw-semibold fs-14 bg-odds-blue w-60"
+                    >
+                      12.32
+                      <div class="fs-11 fw-normal">2.32K</div>
+                    </div>
+                    <!-- Lay Odds -->
+                    <div
+                      class="px-1 py-1 text-center fw-semibold fs-14 bg-odds-pink w-60"
+                    >
+                      1.32
+                      <div class="fs-11 fw-normal">2.32K</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </article>
+
+          <!-- Match Tabs Navigation -->
+          <nav
+            class="d-flex align-items-center gap-2 overflow-auto mb-3 bg-white py-2 px-3 full-bleed no-scrollbar"
+            aria-label="Match Sections Tabs"
+          >
+            <!-- Tabs List -->
+            <ul
+              class="nav listing gap-2 flex-nowrap border-0"
+              id="matchTabs"
+              role="tablist"
+            >
+              <!-- Score Card Tab -->
+              <li class="nav-item" role="presentation">
+                <button
+                  class="btn w-100 rounded-2 rounded-bottom-0 py-2 border-0 bg-teal-1 text-teal fw-semibold fs-14 tab-score-active position-relative"
+                  id="scorecard-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#scorecard"
+                  type="button"
+                  role="tab"
+                  aria-controls="scorecard"
+                  aria-selected="true"
+                >
+                  <span class="fw-semibold fs-14">Score Card</span>
+                </button>
+              </li>
+
+              <!-- Premium Fancy Tab -->
+              <li class="nav-item" role="presentation">
+                <button
+                  class="btn w-100 rounded-2 py-2 border-0 fw-semibold fs-14 bg-grey position-relative"
+                  id="premiumfancy-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#premiumfancy"
+                  type="button"
+                  role="tab"
+                  aria-controls="premiumfancy"
+                  aria-selected="false"
+                >
+                  Premium Fancy
+                </button>
+              </li>
+
+              <!-- Line Market Tab -->
+              <li class="nav-item" role="presentation">
+                <button
+                  class="btn w-100 rounded-2 py-2 border-0 fw-semibold fs-14 bg-grey position-relative"
+                  id="linemarket-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#linemarket"
+                  type="button"
+                  role="tab"
+                  aria-controls="linemarket"
+                  aria-selected="false"
+                >
+                  Line Market
+                </button>
+              </li>
+
+              <!-- Additional Line Market Tab (example) -->
+              <li class="nav-item" role="presentation">
+                <button
+                  class="btn w-100 rounded-2 py-2 border-0 fw-semibold fs-14 bg-grey position-relative"
+                  id="linemarket2-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#linemarket2"
+                  type="button"
+                  role="tab"
+                  aria-controls="linemarket2"
+                  aria-selected="false"
+                >
+                  Line Market
+                </button>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Pin Fancy Market Card -->
+          <article
+            class="card border-0 shadow-sm rounded-3 overflow-hidden mb-3"
+            aria-labelledby="pinFancyTitle"
+          >
+            <!-- Card Header: Market Title & Controls -->
+            <header class="bg-teal-30 text-white px-14 py-2">
+              <div
+                class="d-flex align-items-center justify-content-between flex-nowrap"
+              >
+                <!-- Left side: Market name -->
+                <h2 id="pinFancyTitle" class="fw-medium fs-14 text-nowrap mb-0">
+                  Pin Fancy Market
+                </h2>
+
+                <!-- Right side: Actions / Info -->
+                <div class="d-flex align-items-center gap-3 flex-nowrap">
+                  <!-- Details icon -->
+                  <img
+                    src="./assets/images/detail-icon.svg"
+                    width="18"
+                    alt="Market details icon"
+                  />
+
+                  <!-- Back / Lay Labels -->
+                  <div class="d-flex align-items-center">
+                    <span class="fw-medium fs-12 w-60 text-center text-nowrap"
+                      >BACK</span
+                    >
+                    <span class="fw-medium fs-12 w-60 text-center text-nowrap"
+                      >LAY</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </header>
+
+            <!-- Market Row: Team / Odds -->
+            <section class="px-3 py-2" aria-labelledby="team1Odds">
+              <div class="row align-items-center">
+                <!-- Team Name -->
+                <div class="col d-flex gap-2 align-items-center">
+                  <i
+                    class="bi bi-pin-angle-fill text-teal-10 fs-8 fw-bold"
+                    aria-hidden="true"
+                  ></i>
+                  <h3 id="team1Odds" class="mb-0 fw-medium fs-14 text-grey-30">
+                    Rajasthan Royals
+                  </h3>
+                </div>
+
+                <!-- Odds Card -->
+                <div class="col-auto odds-card">
+                  <div
+                    class="d-flex position-relative rounded-3 overflow-hidden w-100 col-gap-2"
+                  >
+                    <!-- Back Odds -->
+                    <div
+                      class="px-1 py-1 text-center fw-semibold fs-14 bg-odds-blue w-60"
+                    >
+                      12.32
+                      <div class="fs-11 fw-normal">2.32K</div>
+                    </div>
+
+                    <!-- Lay Odds -->
+                    <div
+                      class="px-1 py-1 text-center fw-semibold fs-14 bg-odds-pink w-60"
+                    >
+                      1.32
+                      <div class="fs-11 fw-normal">2.32K</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </article>
+          <!-- Session Markets Card -->
+          <article
+            class="card border-0 shadow-sm rounded-3 overflow-hidden mb-3"
+            aria-labelledby="sessionMarketsTitle"
+          >
+            <!-- Card Header: Market Name and Actions -->
+            <header class="bg-teal-30 text-white px-14 py-2">
+              <div
+                class="d-flex align-items-center justify-content-between flex-nowrap"
+              >
+                <!-- Left: Market Name -->
+                <h2
+                  id="sessionMarketsTitle"
+                  class="fw-medium fs-14 text-nowrap mb-0"
+                >
+                  Session Markets
+                </h2>
+
+                <!-- Right: Actions / Info -->
+                <div class="d-flex align-items-center gap-3 flex-nowrap">
+                  <!-- Detail icon -->
+                  <img
+                    src="./assets/images/detail-icon.svg"
+                    width="18"
+                    alt="View market details"
+                  />
+
+                  <!-- Labels for Back / Lay -->
+                  <div class="d-flex align-items-center">
+                    <span class="fw-medium fs-12 w-60 text-center text-nowrap"
+                      >BACK</span
+                    >
+                    <span class="fw-medium fs-12 w-60 text-center text-nowrap"
+                      >LAY</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </header>
+
+            <!-- Market Sessions -->
+            <!-- Each session is a separate section for SEO and accessibility -->
+
+            <section
+              class="px-3 py-10 border-bottom border-color-grey"
+              aria-labelledby="session1"
+            >
+              <div class="row align-items-center">
+                <!-- Session Name -->
+                <div class="col d-flex gap-2 align-items-center">
+                  <i
+                    class="bi bi-pin-angle fs-8 fw-bold"
+                    aria-hidden="true"
+                  ></i>
+                  <h3 id="session1" class="mb-0 fw-medium fs-14 text-grey-30">
+                    20 Over SA Adv
+                  </h3>
+                </div>
+
+                <!-- Odds -->
+                <div class="col-auto odds-card">
+                  <div
+                    class="d-flex position-relative rounded-3 overflow-hidden w-100 col-gap-2"
+                  >
+                    <!-- Back Odds -->
+                    <div
+                      class="px-1 py-1 text-center fw-semibold fs-14 bg-odds-blue w-60"
+                    >
+                      12.32
+                      <div class="fs-11 fw-normal">2.32K</div>
+                    </div>
+                    <!-- Lay Odds -->
+                    <div
+                      class="px-1 py-1 text-center fw-semibold fs-14 bg-odds-pink w-60"
+                    >
+                      1.32
+                      <div class="fs-11 fw-normal">2.32K</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section
+              class="px-3 py-10 border-bottom border-color-grey"
+              aria-labelledby="session2"
+            >
+              <div class="row align-items-center">
+                <div class="col d-flex gap-2 align-items-center">
+                  <i
+                    class="bi bi-pin-angle fs-8 fw-bold"
+                    aria-hidden="true"
+                  ></i>
+                  <h3 id="session2" class="mb-0 fw-medium fs-14 text-grey-30">
+                    20 Over SA Adv
+                  </h3>
+                </div>
+                <div class="col-auto odds-card">
+                  <div
+                    class="d-flex position-relative rounded-3 overflow-hidden w-100 col-gap-2"
+                  >
+                    <div
+                      class="px-1 py-1 text-center fw-semibold fs-14 bg-odds-blue w-60"
+                    >
+                      12.32
+                      <div class="fs-11 fw-normal">2.32K</div>
+                    </div>
+                    <div
+                      class="px-1 py-1 text-center fw-semibold fs-14 bg-odds-pink w-60"
+                    >
+                      1.32
+                      <div class="fs-11 fw-normal">2.32K</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="px-3 py-10" aria-labelledby="session3">
+              <div class="row align-items-center">
+                <div class="col d-flex gap-2 align-items-center">
+                  <i
+                    class="bi bi-pin-angle fs-8 fw-bold"
+                    aria-hidden="true"
+                  ></i>
+                  <h3 id="session3" class="mb-0 fw-medium fs-14 text-grey-30">
+                    20 Over SA Adv
+                  </h3>
+                </div>
+                <div class="col-auto odds-card">
+                  <div
+                    class="d-flex position-relative rounded-3 overflow-hidden w-100 col-gap-2"
+                  >
+                    <div
+                      class="px-1 py-1 text-center fw-semibold fs-14 bg-odds-blue w-60"
+                    >
+                      12.32
+                      <div class="fs-11 fw-normal">2.32K</div>
+                    </div>
+                    <div
+                      class="px-1 py-1 text-center fw-semibold fs-14 bg-odds-pink w-60"
+                    >
+                      1.32
+                      <div class="fs-11 fw-normal">2.32K</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

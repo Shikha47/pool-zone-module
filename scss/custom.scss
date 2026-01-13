@@ -584,3 +584,18 @@
     }
   }
 }
+.event-date {
+  background: url(../assets/images/rectangle-box.png) no-repeat;
+  background-size: 100% 100%;
+  top: -12px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--white);
+  font-size: 11px;
+  padding: 4px 24px;
+  &-main {
+    overflow: unset;
+    position: relative;
+  }
+}

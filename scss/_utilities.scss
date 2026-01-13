@@ -6,7 +6,11 @@ body {
   background: var(--grey);
   color: var(--text-color);
 }
-
+button {
+  border: none;
+  padding: 0;
+  background: none;
+}
 input:focus,
 textarea:focus,
 select:focus {
@@ -86,6 +90,9 @@ select:focus {
       #107a85 48.4%,
       #135c63 100%
     );
+    &active {
+      color: var(--teal-10) !important;
+    }
   }
 }
 
@@ -226,4 +233,48 @@ a {
 *::-webkit-scrollbar-thumb:hover {
   background: var(--grey-30);
   width: 2px;
+}
+.custom-container {
+  width: 100%;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card-main {
+  background: var(--white);
+  border-radius: 6px;
+  padding: 8px 16px;
+}
+
+.section-row > * {
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+}
+
+.col-main {
+  flex: 1 0 0;
+  position: relative;
+}
+.custom-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.custom-col {
+  padding-left: 10px;
+  padding-right: 10px;
+  flex: 1 0 0%;
+}
+.custom-col-4 {
+  flex: 0 0 auto;
+  width: 33.33333333%;
+}
+.position-relative {
+  position: relative;
+}
+.col-auto {
+  flex: 0 0 auto !important;
+  width: auto;
 }

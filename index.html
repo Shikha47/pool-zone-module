@@ -23,12 +23,11 @@
 
   <body>
     <header id="site-header" role="banner">
-      <nav class="navbar custom-navbar" aria-label="Primary navigation">
-        <div
-          class="container-fluid d-flex align-items-center justify-content-between flex-nowrap"
-        >
+      <nav class="custom-navbar" aria-label="Primary navigation">
+      
+        <div class="custom-container custom-navbar-inner">
           <!-- Left: Menu + Brand -->
-          <div class="d-flex align-items-center gap-2 flex-nowrap">
+          <div class="custom-navbar-left">
             <button
               type="button"
               class="hamburger-btn"
@@ -55,7 +54,7 @@
           </div>
 
           <!-- Right: Search + Auth -->
-          <div class="d-flex align-items-center gap-2 flex-nowrap">
+          <div class="custom-navbar-right">
             <button type="button" class="btn p-0" aria-label="Search">
               <i class="bi bi-search text-white fs-5" aria-hidden="true"></i>
             </button>
@@ -168,11 +167,9 @@
 
     <main>
       <section class="sports-section bg-teal-50">
-        <div class="">
-          <div class="row flex-nowrap overflow-auto g-0 ps-3 text-capitalize">
-            <div
-              class="col-auto flex-fill sport-card bg-gradient-tealactive px-3"
-            >
+        <div class="overflow-auto">
+          <div class="custom-row top-bar ">
+            <div class="custom-col sport-card tab-score-active">
               <div class="badge-wrap fs-11">
                 <span class="badge badge-green">8</span>
                 <span class="badge badge-dark">16</span>
@@ -182,7 +179,7 @@
                 <h6>Cricket</h6>
               </div>
             </div>
-            <div class="col-auto flex-fill sport-card bg-gradient-teal px-3">
+            <div class="custom-col sport-card bg-gradient-teal">
               <div class="badge-wrap fs-11">
                 <span class="badge badge-green">8</span>
                 <span class="badge badge-dark">16</span>
@@ -193,7 +190,7 @@
               </div>
             </div>
 
-            <div class="col-auto flex-fill sport-card bg-gradient-teal px-3">
+            <div class="custom-col sport-card bg-gradient-teal">
               <div class="badge-wrap fs-11">
                 <span class="badge badge-green">8</span>
                 <span class="badge badge-dark">16</span>
@@ -204,7 +201,7 @@
               </div>
             </div>
 
-            <div class="col-auto flex-fill sport-card bg-gradient-teal px-3">
+            <div class="custom-col sport-card bg-gradient-teal">
               <div class="badge-wrap fs-11">
                 <span class="badge badge-green">8</span>
                 <span class="badge badge-dark">16</span>
@@ -215,7 +212,7 @@
               </div>
             </div>
 
-            <div class="col-auto flex-fill sport-card bg-gradient-teal px-3">
+            <div class="custom-col sport-card bg-gradient-teal">
               <div class="badge-wrap fs-11">
                 <span class="badge badge-green">8</span>
                 <span class="badge badge-dark">16</span>
@@ -229,109 +226,53 @@
         </div>
       </section>
       <section class="py-3" aria-labelledby="matches-heading">
-        <div class="container-fluid">
-          <section class="" aria-label="Cricket Matches">
-            <!-- Single Match Card -->
+        <div class="custom-container">
+          <section class="matches-section" aria-label="Cricket Matches">
             <article
-              class="card border-0 py-2 px-3 mb-2"
+              class="match-card card-main py-2 mb-2"
               aria-label="Rajasthan Royals vs Royal Challengers Bangalore match"
             >
               <!-- Match Header -->
-              <header
-                class="d-flex justify-content-between align-items-start mb-3"
-              >
-                <div class="d-flex gap-2 align-items-center">
-                  <!-- In-play Status -->
+              <header class="match-header">
+                <div class="match-left">
                   <img
                     src="./assets/images/inpiay.png"
                     alt="Inplay match"
-                    style="width: 83px"
+                    class="inplay-img"
                   />
 
-                  <!-- Teams -->
                   <div>
-                    <h3 class="mb-0 fw-semibold fs-14">Rajasthan Royals</h3>
-                    <h3 class="mb-0 fw-semibold fs-14">
-                      Royal Challengers Bangalore
-                    </h3>
+                    <h3 class="team-name">Rajasthan Royals</h3>
+                    <h3 class="team-name">Royal Challengers Bangalore</h3>
                   </div>
                 </div>
 
-                <!-- Favorite / Star -->
-                <button aria-label="Mark as favorite" class="btn p-0">
-                  <i class="bi bi-star fs-6"></i>
+                <button aria-label="Mark as favorite" class="favorite-btn">
+                  <i class="bi bi-star"></i>
                 </button>
               </header>
 
               <!-- Odds Section -->
-              <ul
-                class="d-flex gap-1 fs-14 list-unstyled m-0"
-                aria-label="Betting odds for the match"
-              >
+              <ul class="odds-list" aria-label="Betting odds for the match">
                 <!-- Option 1 -->
-                <li
-                  class="d-flex position-relative rounded-3 overflow-hidden w-100"
-                  role="group"
-                  aria-label="Option 1 odds"
-                >
-                  <div
-                    class="px-2 py-2 text-center fw-semibold fs-14 bg-odds-blue w-100"
-                  >
-                    2.32
-                  </div>
-                  <span
-                    class="text-number position-absolute top-50 start-50 translate-middle rounded-circle bg-white fw-semibold d-flex align-items-center justify-content-center"
-                    >1</span
-                  >
-                  <div
-                    class="px-2 py-2 text-center fw-semibold fs-14 bg-odds-pink w-100"
-                  >
-                    12.44
-                  </div>
+                <li class="odds-item" role="group" aria-label="Option 1 odds">
+                  <div class="odds-box bg-odds-blue">2.32</div>
+                  <span class="odds-badge">1</span>
+                  <div class="odds-box bg-odds-pink">12.44</div>
                 </li>
 
                 <!-- Option X -->
-                <li
-                  class="d-flex position-relative rounded-3 overflow-hidden w-100"
-                  role="group"
-                  aria-label="Option X odds"
-                >
-                  <div
-                    class="px-2 py-2 text-center fw-semibold fs-14 bg-odds-blue w-100"
-                  >
-                    -
-                  </div>
-                  <span
-                    class="text-number position-absolute top-50 start-50 translate-middle rounded-circle bg-white fw-semibold d-flex align-items-center justify-content-center"
-                    >X</span
-                  >
-                  <div
-                    class="px-2 py-2 text-center fw-semibold fs-14 bg-odds-pink w-100"
-                  >
-                    -
-                  </div>
+                <li class="odds-item" role="group" aria-label="Option X odds">
+                  <div class="odds-box bg-odds-blue">-</div>
+                  <span class="odds-badge">X</span>
+                  <div class="odds-box bg-odds-pink">-</div>
                 </li>
 
                 <!-- Option 2 -->
-                <li
-                  class="d-flex position-relative rounded-3 overflow-hidden w-100"
-                  role="group"
-                  aria-label="Option 2 odds"
-                >
-                  <div
-                    class="px-2 py-2 text-center fw-semibold fs-14 bg-odds-blue w-100"
-                  >
-                    2.32
-                  </div>
-                  <span
-                    class="text-number position-absolute top-50 start-50 translate-middle rounded-circle bg-white fw-semibold d-flex align-items-center justify-content-center"
-                    >2</span
-                  >
-                  <div
-                    class="px-2 py-2 text-center fw-semibold fs-14 bg-odds-pink w-100"
-                  >
-                    12.44
-                  </div>
+                <li class="odds-item" role="group" aria-label="Option 2 odds">
+                  <div class="odds-box bg-odds-blue">2.32</div>
+                  <span class="odds-badge">2</span>
+                  <div class="odds-box bg-odds-pink">12.44</div>
                 </li>
               </ul>
             </article>
@@ -345,9 +286,7 @@
             />
           </section>
           <section class="mb-3" aria-labelledby="cricket-matches">
-            <header
-              class="bg-white rounded-top py-2 px-3 d-flex align-items-center justify-content-between"
-            >
+            <header class="cricket-section-header">
               <!-- Left section -->
               <div class="d-flex align-items-center gap-2">
                 <img
@@ -355,33 +294,23 @@
                   alt="Cricket icon"
                   style="width: 21px"
                 />
-                <h2 id="cricket-matches" class="mb-0 fw-semibold fs-14">
-                  Cricket
-                </h2>
-                <span
-                  class="text-number rounded-circle text-dark d-flex align-items-center justify-content-center fw-semibold bg-grey-40 fs-11"
-                  >12</span
-                >
+                <h2 id="cricket-matches" class="">Cricket</h2>
+                <span class="text-number">12</span>
               </div>
 
               <!-- Right section -->
-              <div
-                class="text-white fw-medium py-1 px-2 rounded-1 fs-12 bg-teal"
-              >
-                RULE
-              </div>
+              <div class="text-tile">RULE</div>
             </header>
 
             <!-- Match cards -->
             <div class="match-cards">
               <article
-                class="card border-0 py-2 px-14 marginTop-1 rounded-top-0"
+                class="match-card card-main py-2"
+                aria-label="Rajasthan Royals vs Royal Challengers Bangalore match"
               >
-                <header
-                  class="d-flex justify-content-between align-items-start mb-3"
-                >
-                  <div class="d-flex gap-2">
-                    <!-- Match time -->
+                <!-- Match Header -->
+                <header class="match-header">
+                  <div class="match-left">
                     <time
                       datetime="2026-05-22T20:30"
                       class="text-white fw-medium py-1 px-6 rounded-1 fs-11 d-flex align-items-center bg-teal"
@@ -389,90 +318,49 @@
                       22 MAY, 8:30 PM
                     </time>
 
-                    <!-- Teams -->
                     <div>
-                      <h3 class="mb-0 fw-semibold fs-14">Rajasthan Royals</h3>
-                      <h3 class="mb-0 fw-semibold fs-14">
-                        Royal Challengers Bangalore
-                      </h3>
+                      <h3 class="team-name">Rajasthan Royals</h3>
+                      <h3 class="team-name">Royal Challengers Bangalore</h3>
                     </div>
                   </div>
 
-                  <!-- Favorite/star -->
-                  <button aria-label="Mark as favorite" class="btn p-0">
+                  <button aria-label="Mark as favorite" class="favorite-btn">
                     <i class="bi bi-star-fill fs-6 text-teal"></i>
                   </button>
                 </header>
 
-                <!-- Odds -->
-                <div class="d-flex gap-1 fs-14">
-                  <div
-                    class="d-flex position-relative rounded-3 overflow-hidden w-100"
-                  >
-                    <div
-                      class="px-2 py-2 text-center fw-semibold fs-14 bg-odds-blue w-100"
-                    >
-                      2.32
-                    </div>
-                    <span
-                      class="text-number position-absolute top-50 start-50 translate-middle rounded-circle bg-white fw-semibold d-flex align-items-center justify-content-center"
-                      >1</span
-                    >
-                    <div
-                      class="px-2 py-2 text-center fw-semibold fs-14 bg-odds-pink w-100"
-                    >
-                      12.44
-                    </div>
-                  </div>
+                <!-- Odds Section -->
+                <ul class="odds-list" aria-label="Betting odds for the match">
+                  <!-- Option 1 -->
+                  <li class="odds-item" role="group" aria-label="Option 1 odds">
+                    <div class="odds-box bg-odds-blue">2.32</div>
+                    <span class="odds-badge">1</span>
+                    <div class="odds-box bg-odds-pink">12.44</div>
+                  </li>
 
-                  <div
-                    class="d-flex position-relative rounded-3 overflow-hidden w-100"
-                  >
-                    <div
-                      class="px-2 py-2 text-center fw-semibold fs-14 bg-odds-blue w-100"
-                    >
-                      -
-                    </div>
-                    <span
-                      class="text-number position-absolute top-50 start-50 translate-middle rounded-circle bg-white fw-semibold d-flex align-items-center justify-content-center"
-                      >X</span
-                    >
-                    <div
-                      class="px-2 py-2 text-center fw-semibold fs-14 bg-odds-pink w-100"
-                    >
-                      -
-                    </div>
-                  </div>
+                  <!-- Option X -->
+                  <li class="odds-item" role="group" aria-label="Option X odds">
+                    <div class="odds-box bg-odds-blue">-</div>
+                    <span class="odds-badge">X</span>
+                    <div class="odds-box bg-odds-pink">-</div>
+                  </li>
 
-                  <div
-                    class="d-flex position-relative rounded-3 overflow-hidden w-100"
-                  >
-                    <div
-                      class="px-2 py-2 text-center fw-semibold fs-14 bg-odds-blue w-100"
-                    >
-                      2.32
-                    </div>
-                    <span
-                      class="text-number position-absolute top-50 start-50 translate-middle rounded-circle bg-white fw-semibold d-flex align-items-center justify-content-center"
-                      >2</span
-                    >
-                    <div
-                      class="px-2 py-2 text-center fw-semibold fs-14 bg-odds-pink w-100"
-                    >
-                      12.44
-                    </div>
-                  </div>
-                </div>
+                  <!-- Option 2 -->
+                  <li class="odds-item" role="group" aria-label="Option 2 odds">
+                    <div class="odds-box bg-odds-blue">2.32</div>
+                    <span class="odds-badge">2</span>
+                    <div class="odds-box bg-odds-pink">12.44</div>
+                  </li>
+                </ul>
               </article>
 
               <article
-                class="card border-0 py-2 px-14 marginTop-1 rounded-top-0"
+                class="match-card card-main py-2"
+                aria-label="Rajasthan Royals vs Royal Challengers Bangalore match"
               >
-                <header
-                  class="d-flex justify-content-between align-items-start mb-3"
-                >
-                  <div class="d-flex gap-2">
-                    <!-- Match time -->
+                <!-- Match Header -->
+                <header class="match-header">
+                  <div class="match-left">
                     <time
                       datetime="2026-05-22T20:30"
                       class="text-white fw-medium py-1 px-6 rounded-1 fs-11 d-flex align-items-center bg-teal"
@@ -480,89 +368,48 @@
                       22 MAY, 8:30 PM
                     </time>
 
-                    <!-- Teams -->
                     <div>
-                      <h3 class="mb-0 fw-semibold fs-14">Rajasthan Royals</h3>
-                      <h3 class="mb-0 fw-semibold fs-14">
-                        Royal Challengers Bangalore
-                      </h3>
+                      <h3 class="team-name">Rajasthan Royals</h3>
+                      <h3 class="team-name">Royal Challengers Bangalore</h3>
                     </div>
                   </div>
 
-                  <!-- Favorite/star -->
-                  <button aria-label="Mark as favorite" class="btn p-0">
+                  <button aria-label="Mark as favorite" class="favorite-btn">
                     <i class="bi bi-star fs-6"></i>
                   </button>
                 </header>
 
-                <!-- Odds -->
-                <div class="d-flex gap-1 fs-14">
-                  <div
-                    class="d-flex position-relative rounded-3 overflow-hidden w-100"
-                  >
-                    <div
-                      class="px-2 py-2 text-center fw-semibold fs-14 bg-odds-blue w-100"
-                    >
-                      2.32
-                    </div>
-                    <span
-                      class="text-number position-absolute top-50 start-50 translate-middle rounded-circle bg-white fw-semibold d-flex align-items-center justify-content-center"
-                      >1</span
-                    >
-                    <div
-                      class="px-2 py-2 text-center fw-semibold fs-14 bg-odds-pink w-100"
-                    >
-                      12.44
-                    </div>
-                  </div>
+                <!-- Odds Section -->
+                <ul class="odds-list" aria-label="Betting odds for the match">
+                  <!-- Option 1 -->
+                  <li class="odds-item" role="group" aria-label="Option 1 odds">
+                    <div class="odds-box bg-odds-blue">2.32</div>
+                    <span class="odds-badge">1</span>
+                    <div class="odds-box bg-odds-pink">12.44</div>
+                  </li>
 
-                  <div
-                    class="d-flex position-relative rounded-3 overflow-hidden w-100"
-                  >
-                    <div
-                      class="px-2 py-2 text-center fw-semibold fs-14 bg-odds-blue w-100"
-                    >
-                      -
-                    </div>
-                    <span
-                      class="text-number position-absolute top-50 start-50 translate-middle rounded-circle bg-white fw-semibold d-flex align-items-center justify-content-center"
-                      >X</span
-                    >
-                    <div
-                      class="px-2 py-2 text-center fw-semibold fs-14 bg-odds-pink w-100"
-                    >
-                      -
-                    </div>
-                  </div>
+                  <!-- Option X -->
+                  <li class="odds-item" role="group" aria-label="Option X odds">
+                    <div class="odds-box bg-odds-blue">-</div>
+                    <span class="odds-badge">X</span>
+                    <div class="odds-box bg-odds-pink">-</div>
+                  </li>
 
-                  <div
-                    class="d-flex position-relative rounded-3 overflow-hidden w-100"
-                  >
-                    <div
-                      class="px-2 py-2 text-center fw-semibold fs-14 bg-odds-blue w-100"
-                    >
-                      2.32
-                    </div>
-                    <span
-                      class="text-number position-absolute top-50 start-50 translate-middle rounded-circle bg-white fw-semibold d-flex align-items-center justify-content-center"
-                      >2</span
-                    >
-                    <div
-                      class="px-2 py-2 text-center fw-semibold fs-14 bg-odds-pink w-100"
-                    >
-                      12.44
-                    </div>
-                  </div>
-                </div>
+                  <!-- Option 2 -->
+                  <li class="odds-item" role="group" aria-label="Option 2 odds">
+                    <div class="odds-box bg-odds-blue">2.32</div>
+                    <span class="odds-badge">2</span>
+                    <div class="odds-box bg-odds-pink">12.44</div>
+                  </li>
+                </ul>
               </article>
               <article
-                class="card border-0 py-2 px-14 marginTop-1 rounded-top-0"
+                class="match-card card-main py-2"
+                aria-label="Rajasthan Royals vs Royal Challengers Bangalore match"
               >
-                <header
-                  class="d-flex justify-content-between align-items-start mb-3"
-                >
-                  <div class="d-flex gap-2">
-                    <!-- Match time -->
+                <!-- Match Header -->
+                <header class="match-header">
+                  <div class="match-left">
                     <time
                       datetime="2026-05-22T20:30"
                       class="text-white fw-medium py-1 px-6 rounded-1 fs-11 d-flex align-items-center bg-teal"
@@ -570,89 +417,48 @@
                       22 MAY, 8:30 PM
                     </time>
 
-                    <!-- Teams -->
                     <div>
-                      <h3 class="mb-0 fw-semibold fs-14">Rajasthan Royals</h3>
-                      <h3 class="mb-0 fw-semibold fs-14">
-                        Royal Challengers Bangalore
-                      </h3>
+                      <h3 class="team-name">Rajasthan Royals</h3>
+                      <h3 class="team-name">Royal Challengers Bangalore</h3>
                     </div>
                   </div>
 
-                  <!-- Favorite/star -->
-                  <button aria-label="Mark as favorite" class="btn p-0">
-                    <i class="bi bi-star fs-6"></i>
+                  <button aria-label="Mark as favorite" class="favorite-btn">
+                    <i class="bi bi-star-fill fs-6 text-teal"></i>
                   </button>
                 </header>
 
-                <!-- Odds -->
-                <div class="d-flex gap-1 fs-14">
-                  <div
-                    class="d-flex position-relative rounded-3 overflow-hidden w-100"
-                  >
-                    <div
-                      class="px-2 py-2 text-center fw-semibold fs-14 bg-odds-blue w-100"
-                    >
-                      2.32
-                    </div>
-                    <span
-                      class="text-number position-absolute top-50 start-50 translate-middle rounded-circle bg-white fw-semibold d-flex align-items-center justify-content-center"
-                      >1</span
-                    >
-                    <div
-                      class="px-2 py-2 text-center fw-semibold fs-14 bg-odds-pink w-100"
-                    >
-                      12.44
-                    </div>
-                  </div>
+                <!-- Odds Section -->
+                <ul class="odds-list" aria-label="Betting odds for the match">
+                  <!-- Option 1 -->
+                  <li class="odds-item" role="group" aria-label="Option 1 odds">
+                    <div class="odds-box bg-odds-blue">2.32</div>
+                    <span class="odds-badge">1</span>
+                    <div class="odds-box bg-odds-pink">12.44</div>
+                  </li>
 
-                  <div
-                    class="d-flex position-relative rounded-3 overflow-hidden w-100"
-                  >
-                    <div
-                      class="px-2 py-2 text-center fw-semibold fs-14 bg-odds-blue w-100"
-                    >
-                      -
-                    </div>
-                    <span
-                      class="text-number position-absolute top-50 start-50 translate-middle rounded-circle bg-white fw-semibold d-flex align-items-center justify-content-center"
-                      >X</span
-                    >
-                    <div
-                      class="px-2 py-2 text-center fw-semibold fs-14 bg-odds-pink w-100"
-                    >
-                      -
-                    </div>
-                  </div>
+                  <!-- Option X -->
+                  <li class="odds-item" role="group" aria-label="Option X odds">
+                    <div class="odds-box bg-odds-blue">-</div>
+                    <span class="odds-badge">X</span>
+                    <div class="odds-box bg-odds-pink">-</div>
+                  </li>
 
-                  <div
-                    class="d-flex position-relative rounded-3 overflow-hidden w-100"
-                  >
-                    <div
-                      class="px-2 py-2 text-center fw-semibold fs-14 bg-odds-blue w-100"
-                    >
-                      2.32
-                    </div>
-                    <span
-                      class="text-number position-absolute top-50 start-50 translate-middle rounded-circle bg-white fw-semibold d-flex align-items-center justify-content-center"
-                      >2</span
-                    >
-                    <div
-                      class="px-2 py-2 text-center fw-semibold fs-14 bg-odds-pink w-100"
-                    >
-                      12.44
-                    </div>
-                  </div>
-                </div>
+                  <!-- Option 2 -->
+                  <li class="odds-item" role="group" aria-label="Option 2 odds">
+                    <div class="odds-box bg-odds-blue">2.32</div>
+                    <span class="odds-badge">2</span>
+                    <div class="odds-box bg-odds-pink">12.44</div>
+                  </li>
+                </ul>
               </article>
               <article
-                class="card border-0 py-2 px-14 marginTop-1 rounded-top-0"
+                class="match-card card-main py-2"
+                aria-label="Rajasthan Royals vs Royal Challengers Bangalore match"
               >
-                <header
-                  class="d-flex justify-content-between align-items-start mb-3"
-                >
-                  <div class="d-flex gap-2">
-                    <!-- Match time -->
+                <!-- Match Header -->
+                <header class="match-header">
+                  <div class="match-left">
                     <time
                       datetime="2026-05-22T20:30"
                       class="text-white fw-medium py-1 px-6 rounded-1 fs-11 d-flex align-items-center bg-teal"
@@ -660,80 +466,40 @@
                       22 MAY, 8:30 PM
                     </time>
 
-                    <!-- Teams -->
                     <div>
-                      <h3 class="mb-0 fw-semibold fs-14">Rajasthan Royals</h3>
-                      <h3 class="mb-0 fw-semibold fs-14">
-                        Royal Challengers Bangalore
-                      </h3>
+                      <h3 class="team-name">Rajasthan Royals</h3>
+                      <h3 class="team-name">Royal Challengers Bangalore</h3>
                     </div>
                   </div>
 
-                  <!-- Favorite/star -->
-                  <button aria-label="Mark as favorite" class="btn p-0">
-                    <i class="bi bi-star fs-6"></i>
+                  <button aria-label="Mark as favorite" class="favorite-btn">
+                    <i class="bi bi-star-fill fs-6 text-teal"></i>
                   </button>
                 </header>
 
-                <!-- Odds -->
-                <div class="d-flex gap-1 fs-14">
-                  <div
-                    class="d-flex position-relative rounded-3 overflow-hidden w-100"
-                  >
-                    <div
-                      class="px-2 py-2 text-center fw-semibold fs-14 bg-odds-blue w-100"
-                    >
-                      2.32
-                    </div>
-                    <span
-                      class="text-number position-absolute top-50 start-50 translate-middle rounded-circle bg-white fw-semibold d-flex align-items-center justify-content-center"
-                      >1</span
-                    >
-                    <div
-                      class="px-2 py-2 text-center fw-semibold fs-14 bg-odds-pink w-100"
-                    >
-                      12.44
-                    </div>
-                  </div>
+                <!-- Odds Section -->
+                <ul class="odds-list" aria-label="Betting odds for the match">
+                  <!-- Option 1 -->
+                  <li class="odds-item" role="group" aria-label="Option 1 odds">
+                    <div class="odds-box bg-odds-blue">2.32</div>
+                    <span class="odds-badge">1</span>
+                    <div class="odds-box bg-odds-pink">12.44</div>
+                  </li>
 
-                  <div
-                    class="d-flex position-relative rounded-3 overflow-hidden w-100"
-                  >
-                    <div
-                      class="px-2 py-2 text-center fw-semibold fs-14 bg-odds-blue w-100"
-                    >
-                      -
-                    </div>
-                    <span
-                      class="text-number position-absolute top-50 start-50 translate-middle rounded-circle bg-white fw-semibold d-flex align-items-center justify-content-center"
-                      >X</span
-                    >
-                    <div
-                      class="px-2 py-2 text-center fw-semibold fs-14 bg-odds-pink w-100"
-                    >
-                      -
-                    </div>
-                  </div>
+                  <!-- Option X -->
+                  <li class="odds-item" role="group" aria-label="Option X odds">
+                    <div class="odds-box bg-odds-blue">-</div>
+                    <span class="odds-badge">X</span>
+                    <div class="odds-box bg-odds-pink">-</div>
+                  </li>
 
-                  <div
-                    class="d-flex position-relative rounded-3 overflow-hidden w-100"
-                  >
-                    <div
-                      class="px-2 py-2 text-center fw-semibold fs-14 bg-odds-blue w-100"
-                    >
-                      2.32
-                    </div>
-                    <span
-                      class="text-number position-absolute top-50 start-50 translate-middle rounded-circle bg-white fw-semibold d-flex align-items-center justify-content-center"
-                      >2</span
-                    >
-                    <div
-                      class="px-2 py-2 text-center fw-semibold fs-14 bg-odds-pink w-100"
-                    >
-                      12.44
-                    </div>
-                  </div>
-                </div>
+                  <!-- Option 2 -->
+                  <li class="odds-item" role="group" aria-label="Option 2 odds">
+                    <div class="odds-box bg-odds-blue">2.32</div>
+                    <span class="odds-badge">2</span>
+                    <div class="odds-box bg-odds-pink">12.44</div>
+                  </li>
+                </ul>
               </article>
             </div>
           </section>
@@ -745,7 +511,7 @@
           >
             <!-- Casino Tab -->
             <button
-              class="col-6 tab-item tab-active d-flex align-items-center justify-content-center gap-2 p-10 text-white border-0"
+              class="custom-col tab-item tab-active"
               role="tab"
               aria-selected="true"
               aria-controls="casino-panel"
@@ -760,7 +526,7 @@
 
             <!-- Evolution Tab -->
             <button
-              class="col-6 tab-item tab-inactive d-flex align-items-center justify-content-center gap-2 p-10 border-0"
+              class="col-6 tab-item"
               role="tab"
               aria-selected="false"
               aria-controls="evolution-panel"
@@ -774,15 +540,18 @@
             </button>
           </nav>
 
-          <section class="py-3" aria-labelledby="games-section-heading">
-            <div class="row g-2 g-md-3">
+          <section
+            class="py-3 game-section"
+            aria-labelledby="games-section-heading"
+          >
+            <div class="custom-row g-2 g-md-3">
               <!-- Game Card -->
-              <article class="col-4">
-                <figure class="position-relative overflow-hidden rounded-2">
+              <article class="custom-col custom-col-4">
+                <figure class="game-section-main">
                   <!-- Pin Icon -->
                   <span
-                    class="position-absolute top-0 start-0 d-flex align-items-center justify-content-center rounded-tl-br bg-pinColor text-white"
-                    style="width: 20px; height: 20px"
+                    class="game-section-pin bg-pinColor"
+          
                     aria-hidden="true"
                   >
                     <i class="bi bi-pin-angle fs-8 fw-bold"></i>
@@ -802,11 +571,12 @@
                 </figure>
               </article>
 
-              <article class="col-4">
-                <figure class="position-relative overflow-hidden rounded-2">
+              <article class="custom-col custom-col-4">
+                  <figure class="game-section-main">
+                  <!-- Pin Icon -->
                   <span
-                    class="position-absolute top-0 start-0 d-flex align-items-center justify-content-center rounded-tl-br bg-pinColor text-white"
-                    style="width: 20px; height: 20px"
+                    class="game-section-pin bg-pinColor"
+                 
                     aria-hidden="true"
                   >
                     <i class="bi bi-pin-angle fs-8 fw-bold"></i>
@@ -821,11 +591,12 @@
                 </figure>
               </article>
 
-              <article class="col-4">
-                <figure class="position-relative overflow-hidden rounded-2">
+              <article class="custom-col custom-col-4">
+                 <figure class="game-section-main">
+                  <!-- Pin Icon -->
                   <span
-                    class="position-absolute top-0 start-0 d-flex align-items-center justify-content-center rounded-tl-br bg-pinColor text-white"
-                    style="width: 20px; height: 20px"
+                    class="game-section-pin bg-pinColor"
+                
                     aria-hidden="true"
                   >
                     <i class="bi bi-pin-angle fs-8 fw-bold"></i>
@@ -840,11 +611,12 @@
                 </figure>
               </article>
 
-              <article class="col-4">
+              <article class="custom-col custom-col-4">
                 <figure class="position-relative overflow-hidden rounded-2">
+                  <figure class="game-section-main">
+                  <!-- Pin Icon -->
                   <span
-                    class="position-absolute top-0 start-0 d-flex align-items-center justify-content-center rounded-tl-br bg-pinColor text-white"
-                    style="width: 20px; height: 20px"
+                    class="game-section-pin bg-pinColor"
                     aria-hidden="true"
                   >
                     <i class="bi bi-pin-angle fs-8 fw-bold"></i>
@@ -859,11 +631,11 @@
                 </figure>
               </article>
 
-              <article class="col-4">
-                <figure class="position-relative overflow-hidden rounded-2">
+              <article class="custom-col custom-col-4">
+                 <figure class="game-section-main">
+                  <!-- Pin Icon -->
                   <span
-                    class="position-absolute top-0 start-0 d-flex align-items-center justify-content-center rounded-tl-br bg-pinColor text-white"
-                    style="width: 20px; height: 20px"
+                    class="game-section-pin bg-pinColor" 
                     aria-hidden="true"
                   >
                     <i
@@ -885,12 +657,12 @@
       </section>
     </main>
     <footer class="bg-gradient-teal" role="contentinfo">
-      <nav class="container-fluid" aria-label="Footer Navigation">
+      <nav class="custom-container" aria-label="Footer Navigation">
         <ul
-          class="row text-center text-white border-gradient-teal flex-nowrap list-unstyled m-0"
+          class="custom-row text-center text-white border-gradient-teal list-unstyled m-0"
         >
           <!-- Casino -->
-          <li class="col p-10 fs-11">
+          <li class="custom-col p-10 fs-11 position-relative">
             <a
               href="#casino"
               class="d-flex flex-column align-items-center gap-2 text-white text-decoration-none"
@@ -909,7 +681,7 @@
           </li>
 
           <!-- Deposit -->
-          <li class="col p-10 fs-11">
+          <li class="custom-col p-10 fs-11">
             <a
               href="#deposit"
               class="d-flex flex-column align-items-center gap-2 text-white text-decoration-none"
@@ -925,7 +697,7 @@
           </li>
 
           <!-- More -->
-          <li class="col p-10 fs-11">
+          <li class="custom-col p-10 fs-11">
             <a
               href="#more"
               class="d-flex flex-column align-items-center gap-2 text-white text-decoration-none"
@@ -941,7 +713,7 @@
           </li>
 
           <!-- Withdrawal -->
-          <li class="col p-10 fs-11">
+          <li class="custom-col p-10 fs-11">
             <a
               href="#withdrawal"
               class="d-flex flex-column align-items-center gap-2 text-white text-decoration-none"
@@ -957,7 +729,7 @@
           </li>
 
           <!-- Account -->
-          <li class="col p-10 fs-11">
+          <li class="custom-col p-10 fs-11">
             <a
               href="#account"
               class="d-flex flex-column align-items-center gap-2 text-white text-decoration-none"
